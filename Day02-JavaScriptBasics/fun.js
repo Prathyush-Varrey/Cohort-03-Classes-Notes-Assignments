@@ -6,5 +6,5 @@ function greetUser(user) {
 
 for (let i = 0; i < users.length; i++){
      let ans = greetUser(users[i]);
-     console.log(ans)
+     console.log(ans);
 }
