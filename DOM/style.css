@@ -1,0 +1,96 @@
+*{
+     margin: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.inputBox{
+     margin: 50px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+}
+
+.inputBox label{
+     font-size: 2rem;
+     font-weight: 700;
+}
+
+.inputBox input{
+     width: 300px;
+     border: 2px solid black;
+     border-radius: 100px;
+     padding: 15px;
+}
+
+.inputBox button{
+     width: 100px;
+     font-size: 1rem;
+     font-weight: 600;
+     border: 2px solid black;
+     border-radius: 50px;
+}
+
+.inputBox button:hover{
+     color : whitesmoke;
+     background-color: black;
+     cursor: pointer;
+}
+
+/* Add this to your style.css */
+
+.todoContainer {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 20px;
+     width: 100%;
+ }
+ 
+ .todoContainer div {
+     flex: 1;
+     margin: 0 10px;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+ }
+ 
+ .todoContainer h2 {
+     text-align: center;
+ }
+ 
+ ul {
+     list-style-type: none;
+     padding: 0;
+ }
+ 
+ ul li {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+     border-bottom: 1px solid #ccc;
+     font-size: 1.5rem;
+ }
+ 
+ ul li button {
+     margin-left: 10px;
+     font-size: 0.8rem;
+     padding: 5px 10px;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ 
+ ul li button:hover {
+     background-color: #ccc;
+ }
+ 
+
+ 
