@@ -1,0 +1,26 @@
+app.post('/addTodo', (req, res) => {
+    const todo = req.body.todo; // Extract todo from request body
+
+    if (!todo || todo.trim() === "") {
+        // Check if todo is empty or just whitespace
+        return res.status(400).send("Please add your todo");
+    }
+
+    // Add the new todo with an incremented ID
+    todos.push({
+        id, // Use the current value of id
+        todo
+    });
+
+    // Increment the ID for the next todo
+    id += 1;
+
+    // Write the updated todos array to the file
+    fs.writeFile('todos.json', JSON.stringify(todos, null, 2), 'utf-8', (err) => {
+        if (err) {
+            console.log(err);
+            return res.status(500).send("Failed to save data"); // Change message to match status code
+        }
+        res.send("Added Todo Successfully");
+    });
+});

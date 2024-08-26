@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "todo": "Add Todo 1"
+  },
+  {
+    "id": 2,
+    "todo": "Add Todo 3-1"
+  },
+  {
+    "id": 5,
+    "todo": "Get 2 Milk packets"
+  }
+]
